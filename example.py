@@ -7,10 +7,10 @@ example_sequences = [
 
 device = 'cuda'
 
-# print(f'Running ESM-1b...')
-# embedding, mask = lm.run_esm(example_sequences, 'ESM-1b', device=device)
-# print(f'Embedding shape: {embedding.shape}')
-# print(f'Mask shape: {mask.shape}')
+print(f'Running ESM-1b...')
+embedding, mask = lm.run_esm(example_sequences, 'ESM-1b', device=device)
+print(f'Embedding shape: {embedding.shape}')
+print(f'Mask shape: {mask.shape}')
 
 print(f'Running ESM-2-3B...')
 embedding, mask = lm.run_esm(example_sequences, 'ESM-2-3B', device=device)
